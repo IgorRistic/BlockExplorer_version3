@@ -1,0 +1,15 @@
+{
+  "name": "blockexplorer_version3-1",
+  "version": "1.0.0",
+  "description": "by Igor Ristic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "web3": "^4.7.0"
+  }
+}
