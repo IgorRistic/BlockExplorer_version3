@@ -12,7 +12,6 @@ body {
     line-height: 2.5;
     background-size: 400% 400%;
     animation: GradientBG 15s ease infinite;
-    background-attachment: fixed;
 
 @keyframes GradientBG 
     0% {background-position: 0% 50%;}
@@ -22,7 +21,7 @@ body {
 
 
 .top-bar {
-    background-color: rgba(192, 114, 30, 0.7);
+    background-color: rgba(230, 187, 94, 0.832);
     color: #fff;
     padding: 20px 0;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
@@ -42,10 +41,8 @@ body {
 .form-control button {
     width: 100%;
     color: #d60f0fdb;
-    font-size: 25px;
-    border: none;
+    font-size: 30px;
     border-radius: 5px;
-    padding: 12px;
     transition: background-color 0.3s ease;
 }
 .form-control input[type="text"] {
