@@ -1,0 +1,14 @@
+node_modules
+.env
+
+# Hardhat 
+/cache
+/artifacts
+
+# TypeChain 
+/typechain
+/typechain-types
+
+# Solidity-coverage
+/coverage
+/coverage.json
