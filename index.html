@@ -1,18 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Block Explorer</title>
-</head>
-<body>
-    <h1>Block Explorer</h1>
-    <form action="/transaction" method="post">
-        <label for="from">From:</label><br>
-        <input type="text" id="from" name="from" required><br>
-        <label for="to">To:</label><br>
-        <input type="text" id="to" name="to" required><br>
-        <label for="amount">Amount:</label><br>
-        <input type="number" id="amount" name="amount" required><br><br>
-        <input type="submit" value="Send">
-    </form>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Block Explorer #3</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./index.css" />
+    
+    <script src="./app.js" type="module" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+    <header class="top-bar"><h1>Explorer #3</h1>
+    <button id="connectWallet">Connect your digital wallet here</button></header>
+    
+
+    <main>
+      <div class="container">
+        <section>
+          <div class="form-control">
+            <input
+              type="text"
+              name="accountNumber"
+              id="accountNumber"
+              placeholder="Account number..."
+            />
+
+            <button id="checkBalance" class="btn btn-primary">
+            <div>
+              <span>Ethereum Balance</span>
+            </div>
+            <div id="balance" class="balance"></div>
+          </div>
+          <div class="form-control">
+            <input
+              type="number"
+              name="amount"
+              id="amount"
+              placeholder="Total to transfer"
+            />
+          </div>
+          <div class="form-control">
+            <input
+              type="text"
+              name="toAccountNumber"
+              id="toAccountNumber"
+              placeholder="Towards account:"
+            />
+          </div>
+          <div class="form-control">
+            <button id="sendTx" class="btn btn-primary">Transfer now</button>
+          </div>
+        </section>
+        <hr />
+
+        <section>
+          <div class="block-container">
+            <span>Latest block: </span>
+            <span id="latestBlock"></span>
+          </div>
+        </section>
+        
+      </div>
+    </main>
+</div>
+  </body>
+</html>
