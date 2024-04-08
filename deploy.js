@@ -12,6 +12,7 @@ async function main() {
 
   await lock.waitForDeployment();
 
+  
   console.log(
     `Lock with ${ethers.formatEther(
       lockedAmount

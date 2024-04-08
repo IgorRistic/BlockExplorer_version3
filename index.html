@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8" />
@@ -8,49 +7,46 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./index.css" />
-    
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.5.0/web3.min.js"
       integrity="sha512-FhAl50BpK3gf9K//lbAWek9EEQEtGQyyXZNc1fuwcC2tVf2cskiJBcumXY0zJksYtms6S5cqubp1MNfUYTkO2A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    >
-    
-    <script src="./app.js" type="module" defer></script>
-  </head>
+    ></script>
 
+    <script src="./app.js" type="module" defer></script>
+
+  </head>
   <body>
     <div class="container">
-    <header class="top-bar"><h1>Explorer #3</h1>
-    <button id="connectWallet">Connect your digital wallet here</button></header>
+    <header class="top-bar"><h1>Crypto #3</h1>
+    <button id="connectWallet">Click here to connect your wallet </button></header>
     
-
     <main>
       <div class="container">
+
         <section>
           <div class="form-control">
             <input
               type="text"
               name="accountNumber"
               id="accountNumber"
-              placeholder="Account number..."
+              placeholder="What is crypto account number?"
             />
 
+            <button id="checkBalance" class="btn btn-primary"> Check Crypto Balance </button>
 
-          <button id="checkBalance" class="btn btn-primary">
-
-            <div>
-              <span>Ethereum Balance</span>
-            </div>
             <div id="balance" class="balance"></div>
-          </div>
+
           <div class="form-control">
             <input
               type="number"
               name="amount"
               id="amount"
-              placeholder="Total to transfer"
+              placeholder="Value?"
             />
+
           </div>
           <div class="form-control">
             <input
@@ -60,19 +56,18 @@
               placeholder="Towards account:"
             />
           </div>
+
           <div class="form-control">
-            <button id="sendTx" class="btn btn-primary">Transfer now</button>
+            <button id="sendTx" class="btn btn-primary">Transfer crypto now</button>
           </div>
-        </section>
-        <hr />
 
         <section>
+          <h4>Block information</h4>
           <div class="block-container">
             <span>Latest block: </span>
             <span id="latestBlock"></span>
           </div>
         </section>
-        
       </div>
     </main>
 </div>
